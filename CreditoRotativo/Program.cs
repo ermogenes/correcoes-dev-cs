@@ -1,5 +1,5 @@
-﻿const double taxaIOFMes = 0.0038;
-const double taxaIOFDia = 0.000082;
+﻿const double TaxaIOFMes = 0.0038;
+const double TaxaIOFDia = 0.000082;
 
 decimal totalFatura, valorPagamentoMinimo, valorNaoPago;
 decimal valorJuros, valorIOFMes, valorIOFDia, valorProximaFatura, custoRotativo;
@@ -20,8 +20,8 @@ valorPagamentoMinimo = totalFatura * Convert.ToDecimal(pagamentoMinimo);
 
 valorNaoPago = totalFatura - valorPagamentoMinimo;
 valorJuros = valorNaoPago * Convert.ToDecimal(taxaJuros);
-valorIOFMes = valorNaoPago * Convert.ToDecimal(taxaIOFMes);
-valorIOFDia = valorNaoPago * Convert.ToDecimal(taxaIOFDia * 30);
+valorIOFMes = valorNaoPago * Convert.ToDecimal(TaxaIOFMes);
+valorIOFDia = valorNaoPago * Convert.ToDecimal(TaxaIOFDia * 30);
 
 valorProximaFatura = valorNaoPago + valorJuros + valorIOFMes + valorIOFDia;
 custoRotativo = valorProximaFatura - valorNaoPago;

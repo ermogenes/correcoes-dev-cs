@@ -1,22 +1,11 @@
-﻿using System;
+﻿double distancia, tempo, velocidade;
 
-namespace VelocMedia
-{
-    class Program
-    {
-        static void Main(string[] args)
-        {
-            double distancia, tempo, velocidade;
+Console.Write("Distância percorrida (m): ");
+distancia = Convert.ToDouble(Console.ReadLine());
 
-            Console.Write("Distância percorrida (m): ");
-            distancia = Convert.ToDouble(Console.ReadLine());
-            
-            Console.Write("Tempo gasto (s): ");
-            tempo = Convert.ToDouble(Console.ReadLine());
+Console.Write("Tempo gasto (s): ");
+tempo = Convert.ToDouble(Console.ReadLine());
 
-            velocidade = distancia / tempo;
+velocidade = distancia / tempo;
 
-            Console.WriteLine($"\nVelocidade média: {velocidade:N2} m/s");
-        }
-    }
-}
+Console.WriteLine($"\nVelocidade média: {velocidade:N2} m/s");

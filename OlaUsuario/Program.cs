@@ -1,16 +1,5 @@
-﻿using System;
+﻿string nomeUsuario;
+Console.Write("Digite seu nome: ");
+nomeUsuario = Console.ReadLine()!;
 
-namespace OlaUsuario
-{
-    class Program
-    {
-        static void Main(string[] args)
-        {
-            string nomeUsuario;
-            Console.Write("Digite seu nome: ");
-            nomeUsuario = Console.ReadLine();
-
-            Console.WriteLine($"Olá, {nomeUsuario}!");
-        }
-    }
-}
+Console.WriteLine($"Olá, {nomeUsuario}!");

@@ -1,16 +1,5 @@
-﻿using System;
+﻿string fraseDigitada;
+Console.Write("Digite uma frase: ");
+fraseDigitada = Console.ReadLine()!;
 
-namespace Gritador
-{
-    class Program
-    {
-        static void Main(string[] args)
-        {
-            string fraseDigitada;
-            Console.Write("Digite uma frase: ");
-            fraseDigitada = Console.ReadLine();
-
-            Console.WriteLine(fraseDigitada.ToUpper());
-        }
-    }
-}
+Console.WriteLine(fraseDigitada.ToUpper());

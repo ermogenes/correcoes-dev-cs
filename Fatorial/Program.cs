@@ -1,35 +1,24 @@
-﻿using System;
+﻿Console.Write("Número: ");
+int numero = Convert.ToInt32(Console.ReadLine());
 
-namespace Fatorial
+if (numero < 0 || numero >= 32)
 {
-    class Program
+    Console.WriteLine("Digite um número natural positivo menor do que 32.");
+}
+else
+{
+    int fatorial = 1;
+
+    if (numero >= 2)
     {
-        static void Main(string[] args)
+        int i = 2;
+
+        while (i <= numero)
         {
-            Console.Write("Número: ");
-            int numero = Convert.ToInt32(Console.ReadLine());
-
-            if (numero < 0 || numero >= 32)
-            {
-                Console.WriteLine("Digite um número natural positivo menor do que 32.");
-            }
-            else
-            {
-                int fatorial = 1;
-
-                if (numero >= 2)
-                {
-                    int i = 2;
-
-                    while(i <= numero)
-                    {
-                        fatorial = fatorial * i;
-                        i += 1;
-                    }
-                }
-
-                Console.WriteLine($"{numero}! = {fatorial}");
-            }
+            fatorial = fatorial * i;
+            i += 1;
         }
     }
+
+    Console.WriteLine($"{numero}! = {fatorial}");
 }

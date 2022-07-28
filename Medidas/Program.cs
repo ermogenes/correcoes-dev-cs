@@ -1,23 +1,12 @@
-﻿using System;
+﻿double m, cm, km;
 
-namespace Medidas
-{
-    class Program
-    {
-        static void Main(string[] args)
-        {
-            double m, cm, km;
+Console.Write("Entre com a medida (em metros): ");
+m = Convert.ToDouble(Console.ReadLine());
 
-            Console.Write("Entre com a medida (em metros): ");
-            m = Convert.ToDouble(Console.ReadLine());
+cm = m * 100;
+km = m / 1000;
 
-            cm = m * 100;
-            km = m / 1000;
-
-            Console.WriteLine("\n--- Equivalência ---");
-            Console.WriteLine($"{cm} cm");
-            Console.WriteLine($"{m} m");
-            Console.WriteLine($"{km} Km");
-        }
-    }
-}
+Console.WriteLine("\n--- Equivalência ---");
+Console.WriteLine($"{cm} cm");
+Console.WriteLine($"{m} m");
+Console.WriteLine($"{km} Km");

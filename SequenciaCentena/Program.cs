@@ -1,18 +1,7 @@
-﻿using System;
+﻿int n = 1;
 
-namespace SequenciaCentena
+while (n <= 100)
 {
-    class Program
-    {
-        static void Main(string[] args)
-        {
-            int n = 1;
-
-            while (n <= 100)
-            {
-                Console.Write($"{n} ");
-                n = n + 1;
-            }
-        }
-    }
+    Console.Write($"{n} ");
+    n = n + 1;
 }

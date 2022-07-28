@@ -1,21 +1,10 @@
-﻿using System;
+﻿string fraseDigitada, fraseComDislalia;
 
-namespace Cebolinha
-{
-    class Program
-    {
-        static void Main(string[] args)
-        {
-            string fraseDigitada, fraseComDislalia;
-            
-            Console.Write("Digite uma flase: ");
-            fraseDigitada = Console.ReadLine();
+Console.Write("Digite uma flase: ");
+fraseDigitada = Console.ReadLine()!;
 
-            fraseComDislalia = fraseDigitada
-                .Replace("r", "l")
-                .Replace("R", "L");
+fraseComDislalia = fraseDigitada
+    .Replace("r", "l")
+    .Replace("R", "L");
 
-            Console.WriteLine(fraseComDislalia);
-        }
-    }
-}
+Console.WriteLine(fraseComDislalia);

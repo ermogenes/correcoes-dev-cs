@@ -1,18 +1,7 @@
-﻿using System;
-
-namespace ASCIITable
+﻿int i = 32;
+while (i <= 126)
 {
-    class Program
-    {
-        static void Main(string[] args)
-        {
-            int i = 32;
-            while (i <= 126)
-            {
-                char caractere = Convert.ToChar(i);
-                Console.Write(caractere);
-                i++;
-            }
-        }
-    }
+    char caractere = Convert.ToChar(i);
+    Console.Write(caractere);
+    i++;
 }

@@ -1,22 +1,11 @@
-﻿using System;
+﻿double b, h, area;
 
-namespace AreaTrianguloRet
-{
-    class Program
-    {
-        static void Main(string[] args)
-        {
-            double b, h, area;
+Console.Write("Base....: ");
+b = Convert.ToDouble(Console.ReadLine());
 
-            Console.Write("Base....: ");
-            b = Convert.ToDouble(Console.ReadLine());
+Console.Write("Altura..: ");
+h = Convert.ToDouble(Console.ReadLine());
 
-            Console.Write("Altura..: ");
-            h = Convert.ToDouble(Console.ReadLine());
+area = (b * h) / 2;
 
-            area = (b * h) / 2;
-
-            Console.WriteLine($"\nÁrea....: {area:N3}");
-        }
-    }
-}
+Console.WriteLine($"\nÁrea....: {area:N3}");

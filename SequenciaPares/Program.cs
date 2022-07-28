@@ -1,28 +1,17 @@
-﻿using System;
+﻿Console.Write("Números pares entre 0 e ? ");
+int numeroInformado = Convert.ToInt32(Console.ReadLine());
 
-namespace SequenciaPares
+if (numeroInformado >= 1)
 {
-    class Program
+    int numeroPar = 0;
+
+    while (numeroPar <= numeroInformado)
     {
-        static void Main(string[] args)
-        {
-            Console.Write("Números pares entre 0 e ? ");
-            int numeroInformado = Convert.ToInt32(Console.ReadLine());
-
-            if (numeroInformado >= 1)
-            {
-                int numeroPar = 0;
-
-                while (numeroPar <= numeroInformado)
-                {
-                    Console.Write($"{numeroPar} ");
-                    numeroPar += 2;
-                }
-            }
-            else
-            {
-                Console.WriteLine($"O número {numeroInformado} não é inteiro positivo.");
-            }
-        }
+        Console.Write($"{numeroPar} ");
+        numeroPar += 2;
     }
+}
+else
+{
+    Console.WriteLine($"O número {numeroInformado} não é inteiro positivo.");
 }

@@ -1,6 +1,6 @@
 # correcoes-dev-cs
 
-<img height="150" src="https://raw.githubusercontent.com/ermogenes/aulas-programacao-csharp/master/content/00%20logo%20github.png">
+[<img height="150" src="https://raw.githubusercontent.com/ermogenes/aulas-programacao-csharp/master/content/00%20logo%20github.png">](https://github.com/ermogenes/aulas-programacao-csharp/)
 
 Correções dos [exercícios](https://github.com/ermogenes/aulas-programacao-csharp/#-exerc%C3%ADcios) do curso [Dev C#](https://github.com/ermogenes/aulas-programacao-csharp/) ✔
 

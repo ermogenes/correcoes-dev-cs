@@ -2,6 +2,11 @@
 
 Correções dos exercícios do curso Dev C# ✔
 
+- Temporada 1 (vídeo e código)
+- Temporada 2 (código)
+
+Total: 143 exercícios resolvidos.
+
 ## .NET 6
 
 Com as alterações no _template_ `console` a partir do .NET 6, os exercícios feitos em .NET 5 foram atualizados.

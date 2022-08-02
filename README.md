@@ -1,6 +1,8 @@
 # correcoes-dev-cs
 
-Correções dos exercícios do curso Dev C# ✔
+<img height="150" src="https://raw.githubusercontent.com/ermogenes/aulas-programacao-csharp/master/content/00%20logo%20github.png">
+
+Correções dos [exercícios](https://github.com/ermogenes/aulas-programacao-csharp/#-exerc%C3%ADcios) do curso [Dev C#](https://github.com/ermogenes/aulas-programacao-csharp/) ✔
 
 - Temporada 1 (vídeo e código)
 - Temporada 2 (código)

@@ -58,8 +58,8 @@ class Bateria
     public int QuantidadeDeOndas() => ondas.Count();
     public bool BateriaPerfeita() => Pontos() == 20;
     public double Pontos() => ondas
-        .OrderBy(onda => onda.Nota())
-        .TakeLast(2)
+        .OrderByDescending(onda => onda.Nota())
+        .Take(2)
         .Sum(onda => onda.Nota());
 }
 
@@ -78,12 +78,14 @@ class Onda
     public bool TodosJuizesDeramNotas() => QuantidadeDeNotas() >= 5;
     public double Nota()
     {
-        if (QuantidadeDeNotas() <= 2)
+        if (!TodosJuizesDeramNotas())
             return 0;
 
         return notas
-            .OrderBy(n => n)
-            .Skip(2)
+            .OrderBy(nota => nota)
+            .Skip(1)
+            .Reverse()
+            .Skip(1)
             .Average();
     }
 }

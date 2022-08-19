@@ -35,7 +35,7 @@ while (jogo.EmAndamento)
         if (algumParBaixado)
             UI.CartaBaixada(jogo.JogadorDaVez, carta);
         else
-            UI.NaoBaixada(jogo.JogadorDaVez, carta);
+            UI.NaoBaixada(jogo, carta);
     }
     else
         UI.NaoHaCartas(jogo.JogadorDaVez);
@@ -367,13 +367,16 @@ class UI
         Console.ResetColor();
         SomCartaBaixada();
     }
-    public static void NaoBaixada(Jogador jogador, Carta carta)
+    public static void NaoBaixada(Jogo jogo, Carta carta)
     {
         Console.ForegroundColor = ConsoleColor.Yellow;
-        Console.Write($"\t{jogador,30} pegou e manteve a carta ");
-        Carta(carta);
+        Console.Write($"\t{jogo.JogadorDaVez,30} pegou e manteve a carta ");
+        if (!jogo.JogadorAEsquerda.Bot || !jogo.JogadorDaVez.Bot)
+            Carta(carta);
+        else
+            Console.Write("     ");
         Console.ForegroundColor = ConsoleColor.Yellow;
-        Console.Write($" [na mão = {jogador.QtdCartasNaMao}]");
+        Console.Write($" [na mão = {jogo.JogadorDaVez.QtdCartasNaMao}]");
         Console.WriteLine();
         Console.ResetColor();
         SomCartaNaoBaixada();

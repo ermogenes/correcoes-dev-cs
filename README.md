@@ -7,7 +7,7 @@ Correções dos [exercícios](https://github.com/ermogenes/aulas-programacao-csh
 - Temporada 1 (vídeo e código)
 - Temporada 2 (código)
 
-Total: 160 exercícios resolvidos.
+Total: 161 exercícios resolvidos.
 
 ## .NET 6
 
